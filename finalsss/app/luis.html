@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tambayan Coffee Shop - Welcome</title>
+  <link rel="stylesheet" href="../css/luis.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <i class="fas fa-coffee"></i>
+        <span>Tambayan Coffee Shop</span>
+      </div>
+      <div class="navbar-menu">
+        <a href="profile.php" class="nav-link">
+          <i class="fas fa-user"></i>
+          <span id="username-display">Loading...</span>
+        </a>
+        <a href="javascript:void(0);" id="logout-btn" class="nav-link logout" onclick="handleLogout(event); return false;">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Logout</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="landing-container">
+    <!-- Left Section - Image -->
+    <div class="landing-image-section">
+      <div class="image-wrapper">
+        <img src="../img/Bgimage.jpg" alt="Coffee Shop" class="landing-image">
+        <div class="image-overlay">
+          <h1 class="welcome-text">Welcome to Tambayan</h1>
+          <p class="tagline">Your Perfect Coffee Experience</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Section - Content -->
+    <div class="landing-content-section">
+      <div class="content-box">
+        <div class="greeting">
+          <h2>Hello, <span class="username" id="greeting-username">Loading...</span>!</h2>
+          <p class="welcome-message">Welcome back to Tambayan Coffee Shop</p>
+        </div>
+
+        <div class="intro-text">
+          <p>We're excited to have you here. Choose what you'd like to do today:</p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <!-- Order Button -->
+          <a href="order.html" class="action-btn order-btn">
+            <div class="btn-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="btn-content">
+              <h3>Place Order</h3>
+              <p>Browse our menu and place an order</p>
+            </div>
+            <div class="btn-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </a>
+
+          <!-- Manage Item Button -->
+          <a href="admin.html" class="action-btn manage-btn">
+            <div class="btn-icon">
+              <i class="fas fa-list"></i>
+            </div>
+            <div class="btn-content">
+              <h3>Manage Items</h3>
+              <p>View all available items and details</p>
+            </div>
+            <div class="btn-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="quick-links">
+          <h4>Quick Access</h4>
+          <div class="links-grid">
+            <a href="read_order.html" class="quick-link">
+              <i class="fas fa-receipt"></i>
+              <span>Orders Record</span>
+            </a>
+            <a href="profile.php" class="quick-link">
+              <i class="fas fa-user-circle"></i>
+              <span>Profile</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="info-section">
+          <div class="info-item">
+            <i class="fas fa-star"></i>
+            <span>Premium Quality Coffee</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-bolt"></i>
+            <span>Fast Service</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-smile"></i>
+            <span>Best Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="landing-footer">
+    <p>&copy; 2026 Tambayan Coffee Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="Back-end/APP/landing.js"></script>
+</body>
+</html>

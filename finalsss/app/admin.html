@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Coffee Shop Admin Panel</title>
+<link rel="stylesheet" href="../css/admin1.css">
+</head>
+<body>
+
+<div class="container">
+  <h1> ADMIN PANEL</h1>
+
+  <!-- CATEGORY SECTION -->
+  <div class="form-card">
+    <h2 id="categoryFormTitle">Add Category</h2>
+    <input type="hidden" id="categoryId">
+    <div class="form-group">
+      <label for="categoryName">Category Name</label>
+      <input type="text" id="categoryName" placeholder="Enter category name">
+    </div>
+    <button id="saveCategoryBtn" class="btn-primary">Add Category</button>
+    <button id="cancelCategoryBtn" class="btn-cancel" style="display:none;">Cancel</button>
+  </div>
+
+  <div class="table-card">
+    <h2>Categories</h2>
+    <table id="categoryTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- ITEM SECTION -->
+  <div class="form-card">
+    <h2 id="itemFormTitle">Add Item</h2>
+    <input type="hidden" id="itemId">
+    <div class="form-group">
+      <label for="itemCategory">Category</label>
+      <select id="itemCategory">
+        <option value="">-- Select Category --</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="itemName">Item Name</label>
+      <input type="text" id="itemName" placeholder="Enter item name">
+    </div>
+    <div class="form-group">
+      <label for="itemPrice">Price</label>
+      <input type="number" id="itemPrice" placeholder="Enter price" min="0" step="0.01">
+    </div>
+    <button id="saveItemBtn" class="btn-primary">Add Item</button>
+    <button id="cancelItemBtn" class="btn-cancel" style="display:none;">Cancel</button>
+  </div>
+
+  <div class="table-card">
+    <h2>Items</h2>
+    <table id="itemTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Category</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  
+  <!-- ADD-ONS SECTION -->
+<div class="form-card">
+  <h2 id="addonFormTitle">Add Add-On</h2>
+  <input type="hidden" id="addonId">
+  <div class="form-group">
+    <label for="addonName">Add-On Name</label>
+    <input type="text" id="addonName" placeholder="Enter add-on name">
+  </div>
+  <div class="form-group">
+    <label for="addonPrice">Price</label>
+    <input type="number" id="addonPrice" placeholder="Enter price" min="0" step="0.01">
+  </div>
+  <button id="saveAddonBtn" class="btn-primary">Add Add-On</button>
+  <button id="cancelAddonBtn" class="btn-cancel" style="display:none;">Cancel</button>
+</div>
+
+<div class="table-card">
+  <h2>Add-Ons</h2>
+  <table id="addonTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<!-- SIZE SECTION -->
+<div class="form-card">
+  <h2 id="sizeFormTitle">Add Size</h2>
+  <input type="hidden" id="sizeId">
+
+  <div class="form-group">
+    <label for="sizeName">Size Name</label>
+    <input type="text" id="sizeName" placeholder="Enter size name (Small, Medium)">
+  </div>
+
+  <div class="form-group">
+    <label for="sizePrice">Price Modifier</label>
+    <input type="number" id="sizePrice" placeholder="Enter price modifier" step="0.01" min="0">
+  </div>
+
+  <button id="saveSizeBtn" class="btn-primary">Add Size</button>
+  <button id="cancelSizeBtn" class="btn-cancel" style="display:none;">Cancel</button>
+</div>
+
+<div class="table-card">
+  <h2>Sizes</h2>
+  <table id="sizeTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Modifier</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<div class="Admin-link-card">
+  <a href="luis.html" class="btn-admin">Landing Page</a>
+  <a href="order.html" class="btn-admin">Order Page</a>
+</div>
+
+
+<script src="../js/admin.js"></script>
+</body>
+</html>
